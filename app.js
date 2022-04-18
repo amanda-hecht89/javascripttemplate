@@ -1,5 +1,5 @@
 // These functions are tested by console logging - all the console log statements
-// should print true.
+
 
 // 1. convertToSeconds
 // Write a function called convertToSeconds that takes
