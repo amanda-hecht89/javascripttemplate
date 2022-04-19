@@ -16,14 +16,23 @@ console.log(`convertToSeconds(10) === 600 : ${convertToSeconds(10) === 600}`);
 // Write a function called areaOfTriangle that takes in the base and height
 // of a triangle and returns its area
 function areaOfTriangle(base, height) {
-    return base + height;
+    const area = (base * height) / 2; 
+    return area;
 }
 console.log(`areaOfTriangle(5, 10) === 25 : ${areaOfTriangle(5, 10) === 25}`);
 
 // 3. lessThan100
 // Given 2 numbers, return true if their sum is less than 100
 // return false if it is greater than 100
-function lessThan100() {}
+function lessThan100(num1, num2) {
+    const num = num1 + num2;
+    if (num > 100) {
+        return false;
+    }
+    else {
+        return true;
+    }
+}
 console.log(`lessThan100(5, 10) === true : ${lessThan100(5, 10) === true}`);
 console.log(`lessThan100(100, 10) === false : ${lessThan100(100, 10) === false}`);
 
@@ -32,7 +41,15 @@ console.log(`lessThan100(100, 10) === false : ${lessThan100(100, 10) === false}`
 // that accepts a first_name and last_name as required parameters
 // and a third parameter called middle_name which is optional.
 // The function should return a string with the first, middle and last names
-function getFormattedName() {}
+function getFormattedName(first_name, last_name, middle_name) {
+    if (!middle_name) {
+        return first_name + ' ' + last_name;
+
+    } else {
+        return first_name + ' ' + middle_name + ' ' + last_name;
+
+    }
+}
 console.log(
     `getFormattedName('Ruth', 'Ginsburg') === 'Ruth Ginsburg': ${
         getFormattedName('Ruth', 'Ginsburg') === 'Ruth Ginsburg'
@@ -54,7 +71,9 @@ console.log(
 //    that checks if the year is a leap year, and returns the correct
 //    number of days for Feb. The default value for the year should be
 //    the current year
-function daysInMonth() {}
+function daysInMonth(month) {
+
+}
 console.log(`daysInMonth(2) === 29: ${daysInMonth(2) === 29}`);
 console.log(`daysInMonth(3) === 31: ${daysInMonth(3) === 31}`);
 console.log(`daysInMonth(11) === 30: ${daysInMonth(11) === 30}`);
