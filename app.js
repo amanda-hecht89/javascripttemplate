@@ -76,7 +76,7 @@ function daysInMonth(month) {
         return 29;
     } else if (month === 4 || month === 6 || month === 9 || month === 11) {
         return 30;
-} else {
+    } else {
         return 31;
     }     
 
